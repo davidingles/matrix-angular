@@ -12,8 +12,7 @@
     width: 66%;
     height: 60vh;
     border-radius: 8px;
-    background: #e0e0e0;
-    padding: 1rem;
+    background: white;
     overflow: hidden;
 }
 
@@ -21,10 +20,12 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    width: 200%;
+    min-width: 200%;
     height: 66%;
     transition: all ease 0.5s;
     transform: translateX(0%);
+    flex:start;
+    max-width: 100%;
 }
 .dil-grande2{
     transform: translateX( 50% );
@@ -35,11 +36,8 @@
 }
 
 .dil-img {
-    border-radius: 0.3rem;
-    border: solid 1px white;
-    width: calc(100% / 2);
-    margin: 0 1rem;
-    box-shadow: 5px 5px 9px 0px rgba(0,0,0,.3), -5px -5px 5px -3px rgba(255,255,255,.5);
+    border-radius: 1rem;
+    max-width: 50%;
 }
 .box-puntos {
     width: 100%;
@@ -55,7 +53,7 @@
     border-radius: 50%;
     box-shadow: 5px 5px 9px #c1c1c1, -5px -5px 9px #ffffff;
     cursor: pointer;
-    /* background-color: orange; */
+    list-style: none;
 }
 .dil-punto:hover{
     box-shadow: 2px 2px 3px 0px rgba(0,0,0,.7), -5px -5px 5px -3px rgba(255,255,255,1);
