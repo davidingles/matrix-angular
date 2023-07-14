@@ -1,0 +1,117 @@
+
+
+.logo{
+    width: 4rem;
+    margin: .5rem;
+    position: fixed;
+    cursor: pointer;
+    z-index: 30;
+}
+
+
+.dil-nav{
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    position: fixed;
+    width: 100%;
+    height: 3rem;
+    background-color: rgba(0,0,0,.05);
+}
+.visible{
+    transition: all 1s ease;
+    transform: translateY(0%);
+}
+.img{
+    width: 2rem;
+    height: 2rem;
+    position: fixed;
+    top: -2rem;
+    cursor: pointer;
+    z-index: 40;
+    color: red;
+}
+@media screen and ( max-width:640px ){
+    .img2{
+        transition: all 1s ease;
+        transform: translateY(100%);
+    }
+    .visible{
+        transform: translateY(-100%);
+    }
+}
+@media screen and (min-width:640px){
+    .img2{
+        transition: all 1s ease;
+        transform: tranlateY(0%);
+    }
+}
+.ul-menu{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    flex-flow: row nowrap;
+    gap: 2rem;
+    list-style: none;
+    margin: auto;
+}
+.ul-menu a{
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+.dil-span{
+    margin: .5rem 1.5rem;
+    cursor: pointer;
+    font-weight: 900;
+}
+.sidebar{
+    position: absolute;
+    width: 80%;
+    height: 80vh;
+    background-color: rgba(0,0,0,.05);
+    left: -80%;
+    display: flex;
+    align-items: center;
+    flex: start;
+    transition: all 1s ease;
+    transform: translateX(0%);
+    border-end-end-radius: 1rem;
+    color: black;
+    display: flex;
+    flex-flow: column;
+}
+.logo2{
+    transition: all 1s ease;
+    opacity: 0;
+    /* border: solid 1px red; */
+    margin-top: 2rem;
+}
+.logo3{
+    transition-delay: 5s;
+    transition: all 1s ease-in;
+    opacity: 1;
+    /* border: solid 1px red; */
+}
+
+.ul-side a, .ul-side span{
+    display: flex;
+    text-decoration: none;
+    color: black;
+    margin: 2rem 0rem;
+    font-size: large;
+}
+hr{
+    border: solid 1px gray;
+}
+.desplegado{
+    transition: all .5s ease;
+    transform: translateX(100%);
+}
+@media screen and (min-width:640px){
+    .desplegado{
+        transition: all 1s ease;
+        transform: translateX(0%);
+    }
+}
+
