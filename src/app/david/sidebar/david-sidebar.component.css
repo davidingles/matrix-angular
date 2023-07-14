@@ -69,7 +69,8 @@
     position: absolute;
     width: 80%;
     height: 80vh;
-    background-color: rgba(0,0,0,.05);
+    background-color: rgba(0,0,0,.7);
+    backdrop-filter: blur(11px);
     left: -80%;
     display: flex;
     align-items: center;
@@ -77,7 +78,7 @@
     transition: all 1s ease;
     transform: translateX(0%);
     border-end-end-radius: 1rem;
-    color: black;
+    color: orange;
     display: flex;
     flex-flow: column;
 }
@@ -97,7 +98,7 @@
 .ul-side a, .ul-side span{
     display: flex;
     text-decoration: none;
-    color: black;
+    color: white;
     margin: 2rem 0rem;
     font-size: large;
 }

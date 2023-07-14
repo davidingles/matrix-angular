@@ -1,4 +1,7 @@
-
+.fix{
+    /* position: absolute; */
+    z-index: 60;
+}
 
 .main{
     width: 100%;

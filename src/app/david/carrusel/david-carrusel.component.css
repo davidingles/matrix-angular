@@ -15,6 +15,12 @@
     background: white;
     overflow: hidden;
 }
+@media screen and ( max-width: 640px){
+    .dil-carrusel{
+        transition: all 2s ease;
+        width: 88%;
+    }
+}
 
 .dil-grande {
     display: flex;
