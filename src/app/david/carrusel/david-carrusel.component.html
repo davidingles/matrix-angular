@@ -1,4 +1,3 @@
-<david-sidebar/>
 <div class="main">
     <div
         id='carrusel'
@@ -7,17 +6,20 @@
         <div
             id='pequeño'
             class='dil-grande'
+            [ngClass]="{'dil-grande2': isActive }"
+            [ngClass]="{'dil-grande3': !isActive }"
+
         >
             <img
                 id='img1'
                 class='dil-img'
-                src='../../../assets/public/imagenes/cielo.jpg'
+                src='../../../assets/public/imagenes/nave.jpg'
                 alt='nave'
             />
             <img
                 id='img1'
                 class='dil-img'
-                src='/imagenes/cielo.jpg'
+                src='../../../assets/public/imagenes/cielo.jpg'
                 alt='nave'
             />
         </div>
@@ -25,12 +27,14 @@
         <ul
             id='boxPuntos'
             class='box-puntos'
+            (click)="activar()"
         >
-            <li
+            <li [ngClass]="{'mierda': isActive}"
                 id='puntos'
                 class='dil-punto'
             ></li>
             <li
+                [ngClass]="{'mierda2': !isActive}"
                 id='puntos2'
                 class='dil-punto'
             ></li>

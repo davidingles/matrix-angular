@@ -11,6 +11,7 @@ export class DavidSidebarComponent implements OnInit {
   constructor() { }
   ngOnInit() { 
     this.bajar()
+    // this.midu()
   }
 
   public menu = menu
@@ -35,4 +36,8 @@ export class DavidSidebarComponent implements OnInit {
     // this.isDesplegado ? (logo?.classList.add('logo3')) : (logo?.classList.add('logo2')) ;
   }
 
+
+
 }
+
+

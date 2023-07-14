@@ -1,17 +1,18 @@
+
+
 .main{
     width: 100%;
-    height: 100%;
+    height: 777px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: solid 1px violet;
 }
 .dil-carrusel {
     width: 66%;
-    /* border: solid 1px white; */
     height: 60vh;
     border-radius: 8px;
     background: #e0e0e0;
-    /* box-shadow: 5px 5px 9px #c1c1c1, -5px -5px 9px #ffffff; */
     padding: 1rem;
     overflow: hidden;
 }
@@ -22,9 +23,15 @@
     justify-content: space-between;
     width: 200%;
     height: 66%;
-    /* gap: 2rem; */
     transition: all ease 0.5s;
     transform: translateX(0%);
+}
+.dil-grande2{
+    transform: translateX( 50% );
+
+}
+.dil-grande3{
+    transform: translateX( -50% );
 }
 
 .dil-img {
@@ -36,7 +43,6 @@
 }
 .box-puntos {
     width: 100%;
-    /* border: solid 1px red; */
     display: flex;
     justify-content: center;
     margin-top: 2rem;
@@ -49,12 +55,21 @@
     border-radius: 50%;
     box-shadow: 5px 5px 9px #c1c1c1, -5px -5px 9px #ffffff;
     cursor: pointer;
+    /* background-color: orange; */
 }
 .dil-punto:hover{
     box-shadow: 2px 2px 3px 0px rgba(0,0,0,.7), -5px -5px 5px -3px rgba(255,255,255,1);
 }
 
 .is-active {
+    background-color: orange;
+    border: solid 1px white;
+}
+.mierda{
+    background-color: orange;
+    border: solid 1px white;
+}
+.mierda2{
     background-color: orange;
     border: solid 1px white;
 }
